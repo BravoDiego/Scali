@@ -6,10 +6,6 @@ export default async bot => {
     bot.db.connect(function () {
         console.log("Base de données connectée !");
     });
-
-    bot.db.query(`INSERT INTO objectif (guild, exercises, count, date) VALUES ("1", "1", "1", "1")`, async (err, req) => {
-        console.log(err)
-    });
     
     await loadSlashCommands(bot);
     

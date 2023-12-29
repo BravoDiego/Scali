@@ -14,8 +14,6 @@ bot.code = config.code;
 bot.roleSporty = "1189998086408372345"
 // console.log(bot.exercise);
 
-bot.deleteWebhook.query
-
 
 bot.login(config.token);
 loadCommands(bot);
